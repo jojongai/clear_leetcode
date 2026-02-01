@@ -30,7 +30,10 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "*://leetcode.com/*",
+                "*://www.leetcode.com/*",
+                "*://leetcode.cn/*",
+                "*://www.leetcode.cn/*"
             ],
             "js": [
                 "content.js"
