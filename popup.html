@@ -8,12 +8,44 @@
 </head>
 <body>
   <div class="container">
-    <div class="toggle-section">
-      <label class="toggle-label">
-        <span>Delete my responses</span>
-        <input type="checkbox" id="deleteToggle" class="toggle-input">
-        <span class="toggle-slider"></span>
-      </label>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="header-text">
+          <h1>Clear LeetCode</h1>
+          <p class="subtitle">Auto-clear your solutions</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="toggle-section">
+        <div class="toggle-header">
+          <label class="toggle-label" for="deleteToggle">
+            <span class="toggle-text">Delete my responses</span>
+            <div class="status-badge" id="statusBadge">
+              <span class="status-text" id="statusText">Off</span>
+            </div>
+          </label>
+        </div>
+        
+        <div class="toggle-wrapper">
+          <input type="checkbox" id="deleteToggle" class="toggle-input">
+          <label for="deleteToggle" class="toggle-slider-label">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <p class="description" id="description">
+          When enabled, your code will be automatically cleared when you switch to a new problem.
+        </p>
+      </div>
     </div>
   </div>
   <script src="popup.js"></script>
